@@ -20,11 +20,12 @@ public class ClassManagementApplication implements CommandLineRunner{
 	
 	@Override
 	public void run(String... args) throws Exception {
-		ClassM class1 = new ClassM("ICT", 2,"Mahesh Abeykoon", "Mr.Abeykoon","No 03/ Colombo, Sri Lanka",717575786,"maheshpabeykoon@gmail.com");
-		classRepository.save(class1);
+//		ClassM class1 = new ClassM("ICT", 2,"Mahesh Abeykoon", "Mr.Abeykoon","No 03/ Colombo, Sri Lanka",717575786,"maheshpabeykoon@gmail.com");
+//		classRepository.save(class1);
+//		
+//		ClassM class2 = new ClassM("CS", 2,"Mah Eshh ", "Mr.Abeykoon","No 03/ Colombo, Sri Lanka",+717575786,"maheshabeykoon@gmail.com");
+//		classRepository.save(class2);
 		
-		ClassM class2 = new ClassM("CS", 2,"Mah Eshh ", "Mr.Abeykoon","No 03/ Colombo, Sri Lanka",+717575786,"maheshabeykoon@gmail.com");
-		classRepository.save(class2);
 		
 		
 	}

@@ -8,4 +8,6 @@ public interface ClassService {
 
 	
 	List<ClassM> getAllDetails();
+	
+	ClassM saveStudentDetails(ClassM classm);
 }

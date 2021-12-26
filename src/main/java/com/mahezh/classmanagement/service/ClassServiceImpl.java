@@ -27,5 +27,13 @@ public class ClassServiceImpl implements ClassService {
 		return classRepository.findAll();
 	}
 
+
+
+	@Override
+	public ClassM saveStudentDetails(ClassM classm) {
+		
+		return classRepository.save(classm);
+	}
+
 	
 }
