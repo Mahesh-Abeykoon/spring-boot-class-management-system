@@ -14,4 +14,7 @@ public interface ClassService {
 	ClassM getStudentDetailById(Long id);
 
 	ClassM updateStudentDetails(ClassM classm);
+	
+	void deleteStudentDetails(Long id); 
+	
 }

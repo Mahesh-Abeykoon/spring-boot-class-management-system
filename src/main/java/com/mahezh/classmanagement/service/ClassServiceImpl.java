@@ -51,5 +51,12 @@ public class ClassServiceImpl implements ClassService {
 		return classRepository.save(classm);
 	}
 
+
+
+	@Override
+	public void deleteStudentDetails(Long id) {
+		classRepository.deleteById(id);		
+	}
+
 	
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.mahezh.classmanagement.model.ClassM;
+import com.mahezh.classmanagement.repository.ClassRepository;
 import com.mahezh.classmanagement.service.ClassService;
 
 @Controller
@@ -64,6 +65,12 @@ public class ClassController {
 
 
 		classService.updateStudentDetails(existingStudent);
+		return "redirect:/student_details";
+	}
+	
+	@GetMapping("/students/{id}")
+	public String deleteStudentDetailss(@PathVariable Long id) {
+		 classService.deleteStudentDetails(id);
 		return "redirect:/student_details";
 	}
 }
