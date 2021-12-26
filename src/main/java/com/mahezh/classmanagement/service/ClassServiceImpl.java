@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.mahezh.classmanagement.model.Class;
+import com.mahezh.classmanagement.model.ClassM;
 import com.mahezh.classmanagement.repository.ClassRepository;
 
 @Service
@@ -21,7 +21,7 @@ public class ClassServiceImpl implements ClassService {
 	
 	
 	@Override
-	public List<Class> getAllDetails() {
+	public List<ClassM> getAllDetails() {
 
 		
 		return classRepository.findAll();

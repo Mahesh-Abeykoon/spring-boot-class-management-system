@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="class")
 
-public class Class {
+public class ClassM {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -87,11 +87,11 @@ public class Class {
 		this.emailAddress = emailAddress;
 	}
 	
-	public Class() {
+	public ClassM() {
 		
 	}
 	
-	public Class(String courseName, int courseNumber, String studentName, String guardianName, String address,
+	public ClassM(String courseName, int courseNumber, String studentName, String guardianName, String address,
 			long contactNumber, String emailAddress) {
 		super();
 		this.courseName = courseName;

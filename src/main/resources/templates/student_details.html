@@ -14,6 +14,34 @@
 	<div class="container">
 		<div class="row">
 			<h1> Class details</h1>
+			
+			<table class = "table table-dark table-hover"> 
+			<thead class ="table-dark">
+		
+				<tr>
+					<th> Course Name</th>
+					<th> Course Number</th>
+					<th> Student Name</th>
+					<th> Guardian</th>
+					<th> Address</th>
+					<th> Contact Number</th>
+					<th> Email </th>
+					<th> Actions</th>	
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr th:each= "class: ${student_details}">
+					<td th:text = "${class.courseName}"></td>
+					<td th:text = "${class.courseNumber}"></td>
+					<td th:text = "${class.studentName}"></td>
+					<td th:text = "${class.guardianName}"></td>
+					<td th:text = "${class.address}"></td>
+					<td th:text = "${class.contactNumber}"></td>
+					<td th:text = "${class.emailAddress}"></td>
+				</tr>
+			</tbody>
+			</table>
 		</div>
 	</div>
 </body>
