@@ -10,4 +10,8 @@ public interface ClassService {
 	List<ClassM> getAllDetails();
 	
 	ClassM saveStudentDetails(ClassM classm);
+	
+	ClassM getStudentDetailById(Long id);
+
+	ClassM updateStudentDetails(ClassM classm);
 }

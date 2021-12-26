@@ -35,5 +35,21 @@ public class ClassServiceImpl implements ClassService {
 		return classRepository.save(classm);
 	}
 
+
+
+	@Override
+	public ClassM getStudentDetailById(Long id) {
+		
+		return classRepository.findById(id).get();
+	}
+
+
+
+	@Override
+	public ClassM updateStudentDetails(ClassM classm) {
+		
+		return classRepository.save(classm);
+	}
+
 	
 }
