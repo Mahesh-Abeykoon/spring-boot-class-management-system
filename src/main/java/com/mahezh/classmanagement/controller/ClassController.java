@@ -1,5 +1,25 @@
 package com.mahezh.classmanagement.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.mahezh.classmanagement.service.ClassService;
+
+@Controller
 public class ClassController {
+	
+	private ClassService classService;
+
+	public ClassController(ClassService classService) {
+		super();
+		this.classService = classService;
+	}
+	
+	@GetMapping("/student_details")
+	public String listStudentDetails(Model model) {
+		model.addAttribute("student_details", classService.getAllDetails());
+		return "student_details";
+	}
 
 }
