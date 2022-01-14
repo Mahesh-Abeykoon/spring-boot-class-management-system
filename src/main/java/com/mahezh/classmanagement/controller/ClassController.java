@@ -42,7 +42,7 @@ public class ClassController {
 	}
 	
 	@GetMapping("/students/edit/{id}")
-	public String editStudentDetaild(@PathVariable Long id, Model model) {
+	public String editStudentDetailById(@PathVariable Long id, Model model) {
 		model.addAttribute("classm", classService.getStudentDetailById(id));
 		return "edit_student_details";
 	}
